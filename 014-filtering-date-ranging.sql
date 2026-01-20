@@ -1,1 +1,1 @@
-SELECT * FROM sales WHERE created_at >= '2026-01-15' AND created_at < '2026-01-20';
+SELECT * FROM sales WHERE created_at BETWEEN '2026-01-20' AND '2026-01-25';
