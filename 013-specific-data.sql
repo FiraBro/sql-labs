@@ -1,0 +1,1 @@
+SELECT product_name FROM sales WHERE is_disputed = TRUE;
