@@ -1,0 +1,1 @@
+SELECT MAX(BookingDate), MIN(BookingDate) FROM Bookings;
