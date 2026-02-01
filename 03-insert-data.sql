@@ -1,6 +1,11 @@
-INSERT INTO sales (customer_name, product_name, value, is_recurring, is_disputed, date_fulfilled)
-VALUES 
-('Alice Johnson', 'SaaS Subscription - Pro', 49.99, TRUE, FALSE, '2026-01-15 10:30:00'),
-('Bob Smith', 'Wireless Headphones', 120.00, FALSE, FALSE, '2026-01-18 14:20:00'),
-('Charlie Davis', 'Monthly Consulting', 500.00, TRUE, TRUE, NULL),
-('Diana Prince', 'Digital eBook', 15.50, FALSE, FALSE, '2026-01-20 09:00:00');
+-- Add some tables
+INSERT INTO VenueTables VALUES (1, 4, 'Window');
+INSERT INTO VenueTables VALUES (2, 2, 'Main Hall');
+
+-- Create a booking for 'John Doe' at Table 1
+INSERT INTO Bookings VALUES (101, 'John Doe', 1, '2024-05-20');
+INSERT INTO Bookings VALUES (102, 'Jane Smith', 2, '2024-05-21');
+
+-- Record a payment for John's booking
+INSERT INTO Payments VALUES (5001, 101, 45.50, 'Paid');
+INSERT INTO Payments VALUES (5002, 102, 30.00, 'Pending');

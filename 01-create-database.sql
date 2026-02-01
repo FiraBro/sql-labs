@@ -1,1 +1,1 @@
-CREATE DATABASE sales_db;
+CREATE DATABASE bookings;
