@@ -1,0 +1,1 @@
+SELECT COUNT(BookingDate) FROM Bookings
